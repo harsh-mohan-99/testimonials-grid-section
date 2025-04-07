@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>testimonials-grid-section</title>
+
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Martel:wght@200;300;400;600;700;800;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    main{
+      background: hsl(214, 17%, 92%);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div.grid{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(2,1fr);
+      gap: 30px;
+      width: 900px;
+    }
+    div.same{
+      padding: 30px;
+      border-radius: 7px;
+      box-shadow: 50px 50px 20px 3px rgba(0,0,0,0.14);
+    }
+    div.item1{
+      grid-column:span 2;
+      background: url(images/bg-pattern-quotation.svg),hsl(263, 55%, 52%);
+      background-repeat: no-repeat;
+      background-position:80% 0%;
+    }
+    div.item2{
+      background:hsl(217, 19%, 35%) ;
+    }
+    div.item3{
+      grid-row: span 2;
+      background: white;
+      position: relative;
+      z-index: 1;
+    }
+    div.item4{
+      background: white;
+    }
+    div.item5{
+      grid-column: span 2;
+      background: hsl(219, 29%, 14%);
+    }
+    img{
+      width: 30px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 10px;
+    }
+    h2,h3{
+      font-family: Barlow Semi condensed;
+      font-size: 10px;
+      color: hsl(0, 0%, 81%);
+    }
+    h2{
+      font-size: 12px;
+      font-weight: 600;
+    }
+    h3{
+      margin-top: 3px;
+      font-weight: 600;
+    }
+    h1{
+      font-size: 16px;
+      font-family: Barlow Semi condensed;
+      margin-top: 10px;
+    }
+    p{
+      font-size: 12px;
+      margin-top: 15px;
+      font-family: Barlow Semi condensed;
+      color: hsl(0, 0%, 81%);
+    }
+    div.item1 img,div.item5 img{
+      border: 3px solid hsl(264, 82%, 80%);
+    }
+    div.item3 div.upper h2{
+      color: hsl(217, 19%, 35%);;
+    }
+    div.item3 div.upper h3{
+      color: hsl(217, 19%, 35%);
+    }
+    div.item3 h1{
+      color: hsl(217, 19%, 35%);
+    }
+    div.item3 p{
+      color: hsl(217, 19%, 35%);
+    }
+    div.item4 div.upper h2{
+      color: hsl(217, 19%, 35%);;
+    }
+    div.item4 div.upper h3{
+      color: hsl(217, 19%, 35%);
+    }
+    div.item4 h1{
+      color: hsl(217, 19%, 35%);
+    }
+    div.item4 p{
+      color: hsl(217, 19%, 35%);
+    }
+    div.item5 h1{
+      color: hsl(0, 0%, 81%);
+    }
+    h1{
+      color: hsl(214, 17%, 92%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="grid">
+    <div class="item1 same">
+      <div  class="upper">
+        <img src="images/image-daniel.jpg" alt="Daniel-image">
+
+        <h2>Daniel Clifford</h2>
+        <h3>Verified Graduate</h3>
+      </div>
+
+      <h1>I received a job offer mid-course, and the subjects I learned were current, if not more so,
+        in the company I joined. I honestly feel I got every penny’s worth.</h1>
+
+      <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+        transition and have heard some people who had an amazing experience here. I signed up
+        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+        The next 12 weeks was the best - and most grueling - time of my life. Since completing
+        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+    </div>
+
+    <div class="item2 same">
+      <div class="upper">
+        <img src="images/image-jonathan.jpg" alt="Jonathan-image">
+        <h2>Jonathan Walters</h2>
+        <h3>Verified Graduate</h3>
+      </div>
+
+      <h1>The team was very supportive and kept me motivated</h1>
+
+      <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+        for a big company. This was one of the best investments I’ve made in myself. ”</p>
+
+    </div>
+    <div class="item3 same">
+      <div class="upper">
+        <img src="images/image-kira.jpg" alt="kira-image">
+        <h2>Kira Whittle</h2>
+
+        <h3>Verified Graduate</h3>
+      </div>
+
+     <h1> Such a life-changing experience. Highly recommended!</h1>
+
+     <p>
+      “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+      professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+      student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+      did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+      project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+      could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+      experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+      100% recommend! ”</p>
+    </div>
+
+    <div class="item4 same">
+      <div class="upper">
+        <img src="images/image-jeanette.jpg" alt="jeanette-image">
+        <h2>
+          Jeanette Harmon
+        </h2>
+        <h3>
+          Verified Graduate
+        </h3>
+      </div>
+
+      <h1> An overall wonderful and rewarding experience</h1>
+
+      <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+        while doing something I love. ”</p>
+    </div>
+
+    <div class="item5 same">
+      <div class="upper">
+        <img src="images/image-patrick.jpg" alt="patrick-imgage">
+        <h2>Patrick Abrams</h2>
+        <h3>Verified Graduate</h3>
+      </div>
+
+      <h1> Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+        learning from their experiences was easy.</h1>
+
+      <p> “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+        gave me the confidence necessary to be able to go out in the world and present myself as a capable
+        junior developer. The standard is above the rest. You will get the personal attention you need from
+        an incredible community of smart and amazing people. ”</p>
+
+     
+
+    </div>
+  </div>
+  </main>
+
+
+</body>
+
+</html>
