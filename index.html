@@ -20,9 +20,10 @@
       padding: 0;
       box-sizing: border-box;
     }
-
-    main{
+    body{
       background: hsl(214, 17%, 92%);
+    }
+    main{
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -124,6 +125,18 @@
     }
     h1{
       color: hsl(214, 17%, 92%);
+    }
+    @media (max-width:550px) {
+      main{
+        margin: 200px 50px;
+      }
+      div.grid{
+        display: flex;
+        flex-direction: column;
+      }
+      div.item4{
+        z-index: 1;
+      }
     }
   </style>
 </head>
